@@ -1,0 +1,2 @@
+class DateAcquisition < ApplicationRecord
+end

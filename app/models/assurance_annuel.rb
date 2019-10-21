@@ -1,0 +1,2 @@
+class AssuranceAnnuel < ApplicationRecord
+end

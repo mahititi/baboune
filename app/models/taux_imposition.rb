@@ -1,0 +1,2 @@
+class TauxImposition < ApplicationRecord
+end

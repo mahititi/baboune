@@ -1,0 +1,2 @@
+class ReglementVehicule < ApplicationRecord
+end

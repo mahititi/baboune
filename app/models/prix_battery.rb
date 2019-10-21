@@ -1,0 +1,2 @@
+class PrixBattery < ApplicationRecord
+end

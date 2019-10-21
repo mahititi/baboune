@@ -1,0 +1,2 @@
+class AcquisitionBatterie < ApplicationRecord
+end

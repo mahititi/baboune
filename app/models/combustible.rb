@@ -1,0 +1,2 @@
+class Combustible < ApplicationRecord
+end

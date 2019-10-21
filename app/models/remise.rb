@@ -1,0 +1,2 @@
+class Remise < ApplicationRecord
+end

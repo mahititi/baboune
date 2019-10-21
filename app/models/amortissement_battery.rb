@@ -1,0 +1,2 @@
+class AmortissementBattery < ApplicationRecord
+end

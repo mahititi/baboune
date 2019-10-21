@@ -1,0 +1,2 @@
+class InformationSocial < ApplicationRecord
+end

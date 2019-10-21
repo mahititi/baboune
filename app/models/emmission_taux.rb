@@ -1,0 +1,2 @@
+class EmmissionTaux < ApplicationRecord
+end

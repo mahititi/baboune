@@ -1,0 +1,2 @@
+class TempsFinancement < ApplicationRecord
+end

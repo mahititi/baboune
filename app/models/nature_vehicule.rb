@@ -1,0 +1,2 @@
+class NatureVehicule < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class BatteryFacture < ApplicationRecord
+end

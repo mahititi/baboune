@@ -1,0 +1,2 @@
+class KilometreAnPro < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class ElectriqueWatt < ApplicationRecord
+end

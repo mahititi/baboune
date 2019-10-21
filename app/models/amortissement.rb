@@ -1,0 +1,2 @@
+class Amortissement < ApplicationRecord
+end

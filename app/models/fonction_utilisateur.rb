@@ -1,0 +1,2 @@
+class FonctionUtilisateur < ApplicationRecord
+end

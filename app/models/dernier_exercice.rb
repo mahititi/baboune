@@ -1,0 +1,2 @@
+class DernierExercice < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class RegimeDeclaratif < ApplicationRecord
+end

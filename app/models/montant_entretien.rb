@@ -1,0 +1,2 @@
+class MontantEntretien < ApplicationRecord
+end
