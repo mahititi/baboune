@@ -74,11 +74,11 @@ class CreateTempsFinancements < ActiveRecord::Migration[6.0]
             t.boolean :82
             t.boolean :83
             t.boolean :84
-
-
-
-          
+            t.belongs_to :user, index: true
+            t.datetime "created_at", null: false
+            t.datetime "updated_at", null: false
       t.timestamps
     end
+    add_index :users, :name
   end
 end

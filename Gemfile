@@ -17,6 +17,21 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
+
+gem 'nokogiri', '~> 1.10.4'
+
+gem 'csv', '~> 3.1', '>= 3.1.2'
+
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+
+gem 'pg_search', '~> 2.3'
+
+gem 'mechanize', '~> 2.7', '>= 2.7.6'
+
+gem 'watir', '~> 6.16', '>= 6.16.5'
+
+gem 'selenium-webdriver'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -31,6 +46,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 4.0.0.beta3'
 end
 
 group :development do
@@ -40,6 +56,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'pry-rails', '~> 0.3.9'
 end
 
 group :test do

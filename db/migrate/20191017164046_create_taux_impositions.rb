@@ -6,11 +6,14 @@ class CreateTauxImpositions < ActiveRecord::Migration[6.0]
       t.boolean :28_pourcent
       t.boolean :31_pourcent
       t.belongs_to :user, index: true #changer user
+      t.datetime "created_at", null: false
+      t.datetime "updated_at", null: false
       #relier avec une create_table
       #penser au calcul
 
     t.boolean
       t.timestamps
     end
+    add_index :users, :name
   end
 end
