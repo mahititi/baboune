@@ -1,0 +1,2 @@
+class ModeleAstonMartin < ApplicationRecord
+end

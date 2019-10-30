@@ -1,0 +1,2 @@
+class ModeleMan < ApplicationRecord
+end

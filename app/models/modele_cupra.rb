@@ -1,0 +1,2 @@
+class ModeleCupra < ApplicationRecord
+end

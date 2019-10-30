@@ -1,0 +1,2 @@
+class ModeleLexu < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class ModeleToyotum < ApplicationRecord
+end

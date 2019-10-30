@@ -1,0 +1,2 @@
+class ModeleAlpine < ApplicationRecord
+end

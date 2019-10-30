@@ -1,0 +1,2 @@
+class ModeleSeat < ApplicationRecord
+end

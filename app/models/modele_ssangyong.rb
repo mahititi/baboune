@@ -1,0 +1,2 @@
+class ModeleSsangyong < ApplicationRecord
+end

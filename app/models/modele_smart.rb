@@ -1,0 +1,2 @@
+class ModeleSmart < ApplicationRecord
+end

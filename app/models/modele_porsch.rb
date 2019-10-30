@@ -1,0 +1,2 @@
+class ModelePorsch < ApplicationRecord
+end

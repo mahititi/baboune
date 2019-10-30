@@ -1,0 +1,2 @@
+class ModeleRollsRoyce < ApplicationRecord
+end

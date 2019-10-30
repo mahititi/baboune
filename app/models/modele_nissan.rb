@@ -1,0 +1,2 @@
+class ModeleNissan < ApplicationRecord
+end

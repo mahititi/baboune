@@ -1,0 +1,2 @@
+class ModeleInfiniti < ApplicationRecord
+end

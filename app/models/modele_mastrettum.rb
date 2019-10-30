@@ -1,0 +1,2 @@
+class ModeleMastrettum < ApplicationRecord
+end

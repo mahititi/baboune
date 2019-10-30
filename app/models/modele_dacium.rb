@@ -1,0 +1,2 @@
+class ModeleDacium < ApplicationRecord
+end

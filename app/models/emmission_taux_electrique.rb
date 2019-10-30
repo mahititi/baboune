@@ -1,0 +1,2 @@
+class EmmissionTauxElectrique < ApplicationRecord
+end

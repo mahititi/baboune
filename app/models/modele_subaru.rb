@@ -1,0 +1,2 @@
+class ModeleSubaru < ApplicationRecord
+end

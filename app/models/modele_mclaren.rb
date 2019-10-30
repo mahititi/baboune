@@ -1,0 +1,2 @@
+class ModeleMclaren < ApplicationRecord
+end

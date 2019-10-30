@@ -1,0 +1,2 @@
+class ModeleSkoda < ApplicationRecord
+end

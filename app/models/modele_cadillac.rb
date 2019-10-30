@@ -1,0 +1,2 @@
+class ModeleCadillac < ApplicationRecord
+end

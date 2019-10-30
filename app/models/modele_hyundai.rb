@@ -1,0 +1,2 @@
+class ModeleHyundai < ApplicationRecord
+end

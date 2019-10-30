@@ -1,0 +1,2 @@
+class ModeleCitroen < ApplicationRecord
+end

@@ -6,7 +6,10 @@ class CreateModeleAlfaRomeos < ActiveRecord::Migration[6.0]
       t.boolean :stelvio
       t.boolean :4C
       t.boolean :4C_spider
+      t.datetime "created_at", null: false
+      t.datetime "updated_at", null: false
       t.timestamps
     end
+    add_index :marques, :alfa_romeo
   end
 end

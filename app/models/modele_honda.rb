@@ -1,0 +1,2 @@
+class ModeleHonda < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class ModelePeugeot < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class ModeleRenault < ApplicationRecord
+end

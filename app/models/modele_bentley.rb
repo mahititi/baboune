@@ -1,0 +1,2 @@
+class ModeleBentley < ApplicationRecord
+end

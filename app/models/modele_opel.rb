@@ -1,0 +1,2 @@
+class ModeleOpel < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class ModeleMercede < ApplicationRecord
+end

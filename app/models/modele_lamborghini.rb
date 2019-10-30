@@ -1,0 +1,2 @@
+class ModeleLamborghini < ApplicationRecord
+end

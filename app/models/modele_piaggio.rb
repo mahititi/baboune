@@ -1,0 +1,2 @@
+class ModelePiaggio < ApplicationRecord
+end

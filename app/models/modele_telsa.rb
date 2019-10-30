@@ -1,0 +1,2 @@
+class ModeleTelsa < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class ModeleVolkswagen < ApplicationRecord
+end

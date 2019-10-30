@@ -1,0 +1,2 @@
+class ModeleMaserati < ApplicationRecord
+end

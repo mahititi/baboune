@@ -1,0 +1,2 @@
+class ModeleSuzuki < ApplicationRecord
+end

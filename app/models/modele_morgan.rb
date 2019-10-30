@@ -1,0 +1,2 @@
+class ModeleMorgan < ApplicationRecord
+end

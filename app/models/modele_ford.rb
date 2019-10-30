@@ -1,0 +1,2 @@
+class ModeleFord < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class ModeleMazda < ApplicationRecord
+end

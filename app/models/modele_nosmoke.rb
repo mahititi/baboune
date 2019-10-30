@@ -1,0 +1,2 @@
+class ModeleNosmoke < ApplicationRecord
+end

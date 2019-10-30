@@ -1,0 +1,2 @@
+class ModeleLotu < ApplicationRecord
+end

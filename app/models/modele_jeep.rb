@@ -1,0 +1,2 @@
+class ModeleJeep < ApplicationRecord
+end

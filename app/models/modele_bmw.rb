@@ -1,0 +1,2 @@
+class ModeleBmw < ApplicationRecord
+end

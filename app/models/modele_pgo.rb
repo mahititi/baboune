@@ -1,0 +1,2 @@
+class ModelePgo < ApplicationRecord
+end

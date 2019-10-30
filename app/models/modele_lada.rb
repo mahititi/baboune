@@ -1,0 +1,2 @@
+class ModeleLada < ApplicationRecord
+end

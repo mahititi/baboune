@@ -1,0 +1,2 @@
+class ModeleFiat < ApplicationRecord
+end
