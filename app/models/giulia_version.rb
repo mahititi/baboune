@@ -1,0 +1,2 @@
+class GiuliaVersion < ApplicationRecord
+end

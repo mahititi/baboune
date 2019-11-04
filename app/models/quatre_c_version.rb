@@ -1,0 +1,2 @@
+class QuatreCVersion < ApplicationRecord
+end

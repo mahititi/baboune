@@ -1,0 +1,2 @@
+class VanquishVersion < ApplicationRecord
+end

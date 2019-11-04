@@ -1,0 +1,2 @@
+class GiuliettaVersion < ApplicationRecord
+end

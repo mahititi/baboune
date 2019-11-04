@@ -1,0 +1,2 @@
+class StelvioVersion < ApplicationRecord
+end

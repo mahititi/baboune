@@ -4,7 +4,6 @@ class CreateModeleAudis < ActiveRecord::Migration[6.0]
       t.boolean :A1citycarver
       t.boolean :A1sportback
 
-      t.boolean :A3
       t.boolean :A3_berline
       t.boolean :A3_cabriolet
       t.boolean :A3_sportback
@@ -27,16 +26,28 @@ class CreateModeleAudis < ActiveRecord::Migration[6.0]
       t.boolean :A8
       t.boolean :A8_L
 
+      t.boolean :e_tron
+
+      t.boolean :Q2
+
+      t.boolean :Q3
+      t.boolean :Q3_sportback
+
+      t.boolean :Q5
+      t.boolean :Q7
+      t.boolean :Q8
+
       t.boolean :R8
       t.boolean :R8_spyder
 
       t.boolean :RS3_berline
       t.boolean :RS3_sportback
+
       t.boolean :RS4_avant
       t.boolean :RS5
       t.boolean :RS5_sportback
-      t.boolean :RS6
-      t.boolean :RS7
+      t.boolean :RS6_avant
+      t.boolean :RS7_sportback
       t.boolean :RSQ3
 
       t.boolean :S3_berline
@@ -53,8 +64,10 @@ class CreateModeleAudis < ActiveRecord::Migration[6.0]
       t.boolean :S6
       t.boolean :S6_avant
 
-      t.boolean :S7
+      t.boolean :S7_sportback
       t.boolean :S8
+
+      t.boolean :SQ2
       t.boolean :SQ5
 
       t.boolean :TT_coupe
@@ -66,17 +79,58 @@ class CreateModeleAudis < ActiveRecord::Migration[6.0]
       t.boolean :TTS_coupe
       t.boolean :TTS_roadster
 
-      t.boolean :Q2
-      t.boolean :Q3
-      t.boolean :Q3_sportback
-
-      t.boolean :SQ2
-      t.boolean :e_tron
-      t.boolean :Q5
-      t.boolean :Q7
-      t.boolean :Q8
-      t.belongs_to
-
+      t.belongs_to :a1citycarver_versions, index: true
+      t.belongs_to :a1sportback_versions, index: true
+      t.belongs_to :a3_berline_versions, index: true
+      t.belongs_to :a3_cabriolet_versions, index: true
+      t.belongs_to :a3_sportback_versions, index: true
+      t.belongs_to :a4_versions, index: true
+      t.belongs_to :a4_allroad_quattro_versions, index: true
+      t.belongs_to :a4_avant_versions, index: true
+      t.belongs_to :a5_versions, index: true
+      t.belongs_to :a5_cabriolet_versions, index: true
+      t.belongs_to :a5_sprotback_versions, index: true
+      t.belongs_to :a6_versions, index: true
+      t.belongs_to :a6_allroad_quattro_versions, index: true
+      t.belongs_to :a6_avant_versions, index: true
+      t.belongs_to :a7_versions, index: true
+      t.belongs_to :a8_versions, index: true
+      t.belongs_to :a8_l_versions, index: true
+      t.belongs_to :e_tron_versions, index: true
+      t.belongs_to :q2_versions, index: true
+      t.belongs_to :q3_versions, index: true
+      t.belongs_to :q3_sportback_versions, index: true
+      t.belongs_to :q5_versions, index: true
+      t.belongs_to :q7_versions, index: true
+      t.belongs_to :q8_versions, index: true
+      t.belongs_to :rs3_berline_versions, index: true
+      t.belongs_to :rs3_sportback_versions, index: true
+      t.belongs_to :rs4_avant_versions, index: true
+      t.belongs_to :rs5_versions, index: true, index: true
+      t.belongs_to :rs5_sportback_versions, index: true
+      t.belongs_to :rs6_avant_versions, index: true
+      t.belongs_to :rs7_sportback_versions, index: true
+      t.belongs_to :rsq3_versions, index: true
+      t.belongs_to :S3_berline, index: true
+      t.belongs_to :s3_cabriolet_versions, index: true
+      t.belongs_to :s3_sportback_versions, index: true
+      t.belongs_to :s4_avant_versions, index: true
+      t.belongs_to :s4_avant_versions, index: true
+      t.belongs_to :s5_versions, index: true
+      t.belongs_to :s5_cabriolet_versions, index: true
+      t.belongs_to :s5_sportback_versions, index: true
+      t.belongs_to :s6_versions, index: true
+      t.belongs_to :s6_avant_versions, index: true
+      t.belongs_to :s7_sportback_versions, index: true
+      t.belongs_to :s8_versions, index: true, index: true
+      t.belongs_to :sq2_versions, index: true
+      t.belongs_to :sq5_versions, index: true
+      t.belongs_to :tt_coupe_versions, index: true
+      t.belongs_to :tt_roadster_versions, index: true
+      t.belongs_to :tt_rs_coupe_versions, index: true
+      t.belongs_to :tt_rs_roadster_versions, index: true
+      t.belongs_to :tts_coupe_versions, index: true
+      t.belongs_to :tts_roadster_versions, index: true
       t.timestamps
     end
     add_index :marques, :audi

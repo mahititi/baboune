@@ -1,0 +1,2 @@
+class TtCoupeVersion < ApplicationRecord
+end

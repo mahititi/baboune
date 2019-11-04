@@ -1,0 +1,2 @@
+class QuatreCSpiderVersion < ApplicationRecord
+end

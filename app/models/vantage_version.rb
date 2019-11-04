@@ -1,0 +1,2 @@
+class VantageVersion < ApplicationRecord
+end

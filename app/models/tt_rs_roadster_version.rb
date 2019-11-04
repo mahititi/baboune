@@ -1,0 +1,2 @@
+class TtRsRoadsterVersion < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class ETronVersion < ApplicationRecord
+end
