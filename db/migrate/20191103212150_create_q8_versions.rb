@@ -13,6 +13,10 @@ class CreateQ8Versions < ActiveRecord::Migration[6.0]
       t.boolean :55_TFSI_340_Quattro_Tiptronic_8_Avus_Extended_Tout_Terrain
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+
+      t.belongs_to :q8, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

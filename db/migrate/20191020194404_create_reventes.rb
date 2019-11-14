@@ -4,7 +4,7 @@ class CreateReventes < ActiveRecord::Migration[6.0]
       t.float :price
       t.references :taux_financements, index: true, foreign_key: true
       t.references :temps_financements, index: true, foreign_key: true
-      t.references :financementss, index: true, foreign_key: true
+      t.references :financements, index: true, foreign_key: true
       t.references :temps_financements, index: true, foreign_key: true
       t.references :reglement_vehicules, index: true, foreign_key: true
       t.references :amortissements, index: true, foreign_key: true

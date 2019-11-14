@@ -12,7 +12,8 @@ class CreateA6AllroadQuattroVersions < ActiveRecord::Migration[6.0]
       t.boolean :Quattro_55_TDI_349_uattro_Tiptronic_8_Avus_Extended_Break
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :
+
+      t.belongs_to :a6_allroad_quattro, index: true
 
       t.timestamps
     end

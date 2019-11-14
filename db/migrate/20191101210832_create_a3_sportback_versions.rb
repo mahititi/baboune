@@ -52,7 +52,8 @@ class CreateA3SportbackVersions < ActiveRecord::Migration[6.0]
       t.boolean :40_TDI_184_Quattro_S_troni_c7_S_Line_Plus_5p
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :
+
+      t.belongs_to :a3_sportback, index: true
       t.timestamps
     end
     add_index :marques, :audi

@@ -1,4 +1,10 @@
 class Revente < ApplicationRecord
-  belongs_to :
-has_many :
+  belongs_to :custom
+  has_many :customs
+  belongs_to :taux_financements
+  belongs_to :temps_financements
+  belongs_to :financementss
+  belongs_to :temps_financements
+  belongs_to :reglement_vehicules
+  belongs_to :amortissements
 end

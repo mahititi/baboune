@@ -4,6 +4,10 @@ class CreateS3CabrioletVersions < ActiveRecord::Migration[6.0]
       t.boolean :50_TFSI_300_Quattro_S_Tronic_7_Cabriolet
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+
+      t.belongs_to :s3_cabriolet, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

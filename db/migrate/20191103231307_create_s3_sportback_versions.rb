@@ -4,6 +4,10 @@ class CreateS3SportbackVersions < ActiveRecord::Migration[6.0]
       t.boolean :50_TFSI_300_Quattro_S_tronic_7_5p
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :tt_roadster, index: true
+
+
       t.timestamps
     end
     add_index :marques, :audi

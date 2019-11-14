@@ -4,6 +4,8 @@ class CreateS5CabrioletVersions < ActiveRecord::Migration[6.0]
       t.boolean :3_0_V6_TFSI_354_Quattro_S_tronic_8_Cabriolet
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :s5_cabriolet, index: true
       t.timestamps
     end
     add_index :marques, :audi

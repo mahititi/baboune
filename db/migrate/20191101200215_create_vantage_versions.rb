@@ -5,6 +5,7 @@ class CreateVantageVersions < ActiveRecord::Migration[6.0]
       t.belongs_to :
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+      t.belongs_to :vantage, index: true
       t.timestamps
     end
     add_index :marques, :aston_martin

@@ -5,6 +5,7 @@ class CreateReglementVehicules < ActiveRecord::Migration[6.0]
       t.boolean :credit
       t.boolean :L_O_A
       t.boolean :L_D_D
+
       t.references :taux_financements, index: true, foreign_key: true
       t.references :temps_financements, index: true, foreign_key: true
       t.references :financementss, index: true, foreign_key: true

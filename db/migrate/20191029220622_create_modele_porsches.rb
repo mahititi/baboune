@@ -19,7 +19,27 @@ class CreateModelePorsches < ActiveRecord::Migration[6.0]
       t.boolean :cayenne_coupe
 
       t.boolean :taycan
-      t.belongs_to :
+
+      t.belongs_to :porsche_version, index: true
+      t.belongs_to :panamera_version, index: true
+      t.belongs_to :panamera_executive_version, index: true
+      t.belongs_to :panamera_sport_turismo_version, index: true
+
+      t.belongs_to :718_boxter_version, index: true
+      t.belongs_to :718_cayman_version, index: true
+      t.belongs_to :718_spyder_version, index: true
+
+      t.belongs_to :911_version, index: true
+      t.belongs_to :911_cabriolet_version, index: true
+      t.belongs_to :911_gt3_version, index: true
+      t.belongs_to :911_speedster_version, index: true
+
+      t.belongs_to :macan_version, index: true
+      t.belongs_to :cayenne_version, index: true
+      t.belongs_to :cayenne_coupe_version, index: true
+
+      t.belongs_to :taycan_version, index: true
+
       t.timestamps
     end
     add_index :marques, :porsche

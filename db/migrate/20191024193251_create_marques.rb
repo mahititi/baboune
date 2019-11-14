@@ -62,64 +62,64 @@ class CreateMarques < ActiveRecord::Migration[6.0]
       t.boolean :volvo
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :modele_abarths, index: true
+      t.belongs_to :modele_abarth, index: true
       t.belongs_to :modele_alfa_romeo, index: true
-      t.belongs_to :modele_alpines, index: true
-      t.belongs_to :modele_aston_martins, index: true
-      t.belongs_to :modele_audis, index: true
-      t.belongs_to :modele_bentleys, index: true
-      t.belongs_to :modele_bmws, index: true
-      t.belongs_to :modele_bollores, index: true
-      t.belongs_to :modele_cadillacs, index: true
-      t.belongs_to :modele_citroens, index: true
-      t.belongs_to :modele_cupras, index: true
-      t.belongs_to :modele_drs, index: true
+      t.belongs_to :modele_alpine, index: true
+      t.belongs_to :modele_aston_martin, index: true
+      t.belongs_to :modele_audi, index: true
+      t.belongs_to :modele_bentley, index: true
+      t.belongs_to :modele_bmw, index: true
+      t.belongs_to :modele_bollore, index: true
+      t.belongs_to :modele_cadillac, index: true
+      t.belongs_to :modele_citroen, index: true
+      t.belongs_to :modele_cupra, index: true
+      t.belongs_to :modele_dr, index: true
       t.belongs_to :modele_ds, index: true
       t.belongs_to :modele_dacia, index: true
-      t.belongs_to :modele_ferraris, index: true
-      t.belongs_to :modele_fiats, index: true
-      t.belongs_to :modele_fords, index: true
-      t.belongs_to :modele_hondas, index: true
-      t.belongs_to :modele_hyundais, index: true
-      t.belongs_to :modele_infinitis, index: true
-      t.belongs_to :modele_isuzus, index: true
-      t.belongs_to :modele_ivecos, index: true
-      t.belongs_to :modele_jaguars, index: true
-      t.belongs_to :modele_jeeps, index: true
+      t.belongs_to :modele_ferrari, index: true
+      t.belongs_to :modele_fiat, index: true
+      t.belongs_to :modele_ford, index: true
+      t.belongs_to :modele_honda, index: true
+      t.belongs_to :modele_hyundai, index: true
+      t.belongs_to :modele_infiniti, index: true
+      t.belongs_to :modele_isuzu, index: true
+      t.belongs_to :modele_iveco, index: true
+      t.belongs_to :modele_jaguar, index: true
+      t.belongs_to :modele_jeep, index: true
       t.belongs_to :modele_kia, index: true
-      t.belongs_to :modele_ladas, index: true
-      t.belongs_to :modele_lamborghinis, index: true
-      t.belongs_to :modele_land_rovers, index: true
-      t.belongs_to :modele_lexus, index: true
-      t.belongs_to :modele_lotus, index: true
-      t.belongs_to :modele_men, index: true
-      t.belongs_to :modele_maseratis, index: true
+      t.belongs_to :modele_lada, index: true
+      t.belongs_to :modele_lamborghini, index: true
+      t.belongs_to :modele_land_rover, index: true
+      t.belongs_to :modele_lexu, index: true
+      t.belongs_to :modele_lotu, index: true
+      t.belongs_to :modele_man, index: true
+      t.belongs_to :modele_maserati, index: true
       t.belongs_to :modele_mastretta, index: true
-      t.belongs_to :modele_mazdas, index: true
-      t.belongs_to :modele_maclarens, index: true
+      t.belongs_to :modele_mazda, index: true
+      t.belongs_to :modele_maclaren, index: true
       t.belongs_to :modele_mercedes, index: true
-      t.belongs_to :modele_minis, index: true
-      t.belongs_to :modele_mitsubishis, index: true
-      t.belongs_to :modele_morgans, index: true
-      t.belongs_to :modele_nissans, index: true
-      t.belongs_to :modele_nosmokes, index: true
-      t.belongs_to :modele_opels, index: true
-      t.belongs_to :modele_peugeots, index: true
-      t.belongs_to :modele_pgos, index: true
-      t.belongs_to :modele_piaggios, index: true
-      t.belongs_to :modele_porsches, index: true
-      t.belongs_to :modele_rolls_royces, index: true
-      t.belongs_to :modele_seats, index: true
-      t.belongs_to :modele_skodas, index: true
-      t.belongs_to :modele_smarts, index: true
-      t.belongs_to :modele_ssangyongs, index: true
-      t.belongs_to :modele_subarus, index: true
-      t.belongs_to :modele_suzukis, index: true
-      t.belongs_to :modele_telsas, index: true
-      t.belongs_to :modele_volkswagens, index: true
-      t.belongs_to :modele_volvos, index: true
+      t.belongs_to :modele_mini, index: true
+      t.belongs_to :modele_mitsubishi, index: true
+      t.belongs_to :modele_morgan, index: true
+      t.belongs_to :modele_nissan, index: true
+      t.belongs_to :modele_nosmoke, index: true
+      t.belongs_to :modele_opel, index: true
+      t.belongs_to :modele_peugeot, index: true
+      t.belongs_to :modele_pgo, index: true
+      t.belongs_to :modele_piaggio, index: true
+      t.belongs_to :modele_porsche, index: true
+      t.belongs_to :modele_rolls_royce, index: true
+      t.belongs_to :modele_seat, index: true
+      t.belongs_to :modele_skoda, index: true
+      t.belongs_to :modele_smart, index: true
+      t.belongs_to :modele_ssangyong, index: true
+      t.belongs_to :modele_subaru, index: true
+      t.belongs_to :modele_suzuki, index: true
+      t.belongs_to :modele_telsa, index: true
+      t.belongs_to :modele_volkswagen, index: true
+      t.belongs_to :modele_volvo, index: true
       t.belongs_to :modele_toyota, index: true
-      t.belongs_to :modele_renaults, index: true
+      t.belongs_to :modele_renault, index: true
 
 
       t.timestamps

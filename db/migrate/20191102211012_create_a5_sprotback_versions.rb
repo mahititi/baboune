@@ -41,7 +41,9 @@ class CreateA5SprotbackVersions < ActiveRecord::Migration[6.0]
       t.boolean	:50_3_0_V6_TDI_286_Quattro_Tiptronic_8_Avus_5p
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to:
+
+      t.belongs_to :A5_sprotback, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

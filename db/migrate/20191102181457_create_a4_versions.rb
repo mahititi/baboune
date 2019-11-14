@@ -37,6 +37,10 @@ class CreateA4Versions < ActiveRecord::Migration[6.0]
       t.boolean :45_TDI_231_Quattro_iptronic_8_Avus_4p
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :A4, index: true
+
+
       t.timestamps
     end
     add_index :marques, :audi

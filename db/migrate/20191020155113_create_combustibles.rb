@@ -8,14 +8,14 @@ class CreateCombustibles < ActiveRecord::Migration[6.0]
       t.boolean :hybride_essence
       t.boolean :hybride_diesel
       t.boolean :electrique
-      t.belongs_to :emmission_tauxes, index: true#
-      t.belongs_to :consomations, index: true
-      t.belongs_to :prix_carburants, index: true
+      t.belongs_to :emmission_tauxe, index: true#
+      t.belongs_to :consomation, index: true
+      t.belongs_to :prix_carburant, index: true
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
       t.timestamps
     end
-    add_index :version_cars, :
+    #add_index :version_cars, :
 
   end
 end

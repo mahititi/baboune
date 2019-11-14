@@ -39,7 +39,44 @@ class CreateModeleOpels < ActiveRecord::Migration[6.0]
       t.boolean :vivaro_combi
       t.boolean :vivaro_plancher_cabine
 
-      t.belongs_to :
+      t.belongs_to :opel, index: true
+      t.belongs_to :adam_version, index: true
+      t.belongs_to :karl_version, index: true
+      t.belongs_to :corsa_version, index: true
+      t.belongs_to :crossland_version, index: true
+
+      t.belongs_to :astra_version, index: true
+      t.belongs_to :astra_sports_tourer_version, index: true
+
+      t.belongs_to :zafira_version, index: true
+      t.belongs_to :cascada_version, index: true
+
+      t.belongs_to :insignia_country_tourer_version, index: true
+      t.belongs_to :insignia_grand_sport_version, index: true
+      t.belongs_to :insignia_sport_tourer_version, index: true
+      t.belongs_to :insignia_tourer_version, index: true
+
+      t.belongs_to :moka_version, index: true
+      t.belongs_to :grandland_version, index: true
+
+      t.belongs_to :combo_cargo_version, index: true
+      t.belongs_to :combo_life_version, index: true
+
+      t.belongs_to :movano_version, index: true
+      t.belongs_to :movano_cabine_approfondie_version, index: true
+      t.belongs_to :movano_cabine_version, index: true
+      t.belongs_to :movano_cabine_benne_version, index: true
+      t.belongs_to :movano_double_cabine_version, index: true
+      t.belongs_to :movano_combi_version, index: true
+      t.belongs_to :movano_grand_volume_version, index: true
+      t.belongs_to :movano_plancher_cabine_version, index: true
+      t.belongs_to :movano_plateau_ridelles_cabine_version, index: true
+
+      t.belongs_to :vivaro_version, index: true
+      t.belongs_to :vivaro_cabine_approfondie_version, index: true
+      t.belongs_to :vivaro_combi_version, index: true
+      t.belongs_to :vivaro_plancher_cabine_version, index: true
+
       t.timestamps
     end
     add_index :marques, :opel

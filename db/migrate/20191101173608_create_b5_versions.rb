@@ -4,7 +4,8 @@ class CreateB5Versions < ActiveRecord::Migration[6.0]
       t.boolean :4_4i_V8_BiTurbo_507_Switch_Tronic_4p
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to
+      t.belongs_to :b5, index: true
+
       t.timestamps
     end
     dd_index :marques, :alpina

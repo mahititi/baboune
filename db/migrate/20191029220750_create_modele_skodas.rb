@@ -16,6 +16,26 @@ class CreateModeleSkodas < ActiveRecord::Migration[6.0]
 
       t.boolean :kamiq
       t.boolean :karoq
+
+      t.belongs_to :skoda, index: true
+
+      t.belongs_to :fabia_version, index: true
+      t.belongs_to :fabia_combi_version, index: true
+
+      t.belongs_to :scala_version, index: true
+
+      t.belongs_to :octovia_version, index: true
+      t.belongs_to :octovia_combi_version, index: true
+
+      t.belongs_to :kodiaq_version, index: true
+
+      t.belongs_to :superb_version, index: true
+      t.belongs_to :superb_combi_version, index: true
+
+      t.belongs_to :kamiq_version, index: true
+      t.belongs_to :karoq_version, index: true
+
+
       t.timestamps
     end
     add_index :marques, :skoda

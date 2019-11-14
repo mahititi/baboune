@@ -10,7 +10,18 @@ class CreateModeleLexus < ActiveRecord::Migration[6.0]
       t.boolean :ux
       t.boolean :nx
       t.boolean :rx
-      t.belongs_to :
+
+      t.belongs_to :lexus
+      t.belongs_to :ct_version, index: true
+      t.belongs_to :is_version, index: true
+      t.belongs_to :rc_version, index: true
+      t.belongs_to :es_version, index: true
+      t.belongs_to :ls_version, index: true
+      t.belongs_to :lc_version, index: true
+      t.belongs_to :ux_version, index: true
+      t.belongs_to :nx_version, index: true
+      t.belongs_to :rx_version, index: true
+
       t.timestamps
     end
     add_index :marques, :lexus

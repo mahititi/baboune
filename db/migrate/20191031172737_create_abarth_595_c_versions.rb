@@ -10,7 +10,8 @@ class CreateAbarth595CVersions < ActiveRecord::Migration[6.0]
       t.boolean :1_4_Turbo_16V_T_Jet_180_BVA5_EsseEsse_Cabriolet
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :
+      t.belongs_to :abarth_595_C, index: true
+
       t.timestamps
     end
     add_index :modele_abarths, :abarth_595_C

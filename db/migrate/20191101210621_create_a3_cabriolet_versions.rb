@@ -21,7 +21,9 @@ class CreateA3CabrioletVersions < ActiveRecord::Migration[6.0]
       t.boolean :40_TFSI_190_Quattro_S_tronic_7_S_Line_Plus_Cabriolet
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :
+
+      t.belongs_to :a3_cabriolet, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

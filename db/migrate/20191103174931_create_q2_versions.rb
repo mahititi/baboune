@@ -81,6 +81,9 @@ class CreateQ2Versions < ActiveRecord::Migration[6.0]
       t.boolean :40_TFSI_190_Quattro_S_tronic_7_Midnight_Series_Tout_Terrain
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :q2, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

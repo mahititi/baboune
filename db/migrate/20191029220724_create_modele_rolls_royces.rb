@@ -6,7 +6,12 @@ class CreateModeleRollsRoyces < ActiveRecord::Migration[6.0]
       t.boolean :phantom_convertible
       t.boolean :phantom_coupe
 
-      t.belongs_to :
+      t.belongs_to :rolls_royce, index: true
+      t.belongs_to :ghost_version, index: true
+      t.belongs_to :phantom_version, index: true
+      t.belongs_to :phantom_convertible_version, index: true
+      t.belongs_to :phantom_coupe_version, index: true
+
       t.timestamps
     end
     add_index :marques, :rolls_royce

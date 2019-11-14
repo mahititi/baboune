@@ -4,6 +4,11 @@ class CreateS7SportbackVersions < ActiveRecord::Migration[6.0]
       t.boolean :56_TDI_349_Quattro_Tiptronic_8_Coupe
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :s7_sportback, index: true
+
+
+
       t.timestamps
     end
     add_index :marques, :audi

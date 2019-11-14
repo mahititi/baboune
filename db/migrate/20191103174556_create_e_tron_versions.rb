@@ -7,6 +7,9 @@ class CreateETronVersions < ActiveRecord::Migration[6.0]
       t.boolean :55_Electrique_408_Quattro_BVA_Edition_One_Tout_Terrain
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :e_tron, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

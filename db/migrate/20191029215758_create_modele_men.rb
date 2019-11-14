@@ -4,7 +4,11 @@ class CreateModeleMen < ActiveRecord::Migration[6.0]
       t.boolean :tge
       t.boolean :tge_cabine
       t.boolean :tge_double_cabine
-      t.belongs_to :
+
+      t.belongs_to :man, index: true
+      t.belongs_to :tge_version, index: true
+      t.belongs_to :tge_cabine_version, index: true
+      t.belongs_to :tge_double_cabine_version , index: true
       t.timestamps
     end
     add_index :marques, :man

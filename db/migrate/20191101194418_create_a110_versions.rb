@@ -6,7 +6,7 @@ class CreateA110Versions < ActiveRecord::Migration[6.0]
       t.boolean :1_8T_292_ch_BVA_A110_Coupe
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :
+    s
 
       t.timestamps
     end

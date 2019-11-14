@@ -10,7 +10,20 @@ class CreateModeleDs < ActiveRecord::Migration[6.0]
 
       t.boolean :ds5
       t.boolean :ds7
-      t.belongs_to :
+
+      t.belongs_to :ds
+
+      t.belongs_to :ds3_version, index: true
+      t.belongs_to :ds3_cabriolet_version, index: true
+      t.belongs_to :ds3_crossback_version, index: true
+
+      t.belongs_to :ds4_version, index: true
+      t.belongs_to :ds4_crossback_version, index: true
+
+      t.belongs_to :ds5_version, index: true
+
+      t.belongs_to :ds7_version, index: true
+
       t.timestamps
     end
     add_index :marques, :ds

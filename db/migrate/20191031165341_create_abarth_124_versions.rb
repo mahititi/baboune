@@ -13,7 +13,8 @@ class CreateAbarth124Versions < ActiveRecord::Migration[6.0]
       t.boolean :Spider_1_4_Turbo_170_Euro_6_BVA6_GT_Cabriolet
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :
+
+      t.belongs_to :abarth_124, index: true
       t.timestamps
     end
     add_index :marques, :abarth

@@ -6,7 +6,14 @@ class CreateModeleIvecos < ActiveRecord::Migration[6.0]
       t.boolean :daily_fourgon
       t.boolean :daily_classe_c
       t.boolean :daily_classe_l
-      t.belongs_to :
+
+      t.belongs_to :iveco, index: true
+      t.belongs_to :daily_cabine_version, index: true
+      t.belongs_to :daily_double_cabine_version, index: true
+      t.belongs_to :daily_fourgon_version, index: true
+      t.belongs_to :daily_classe_c_version, index: true
+      t.belongs_to :daily_classe_l_version, index: true
+
       t.timestamps
     end
     add_index :marques, :iveco

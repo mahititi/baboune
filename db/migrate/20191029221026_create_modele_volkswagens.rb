@@ -60,9 +60,67 @@ class CreateModeleVolkswagens < ActiveRecord::Migration[6.0]
       t.boolean :transporter_fourgon
       t.boolean :transporter_procab
       t.boolean :transporter_tete_motrice
-      
 
-      t.belongs_to :
+
+      t.belongs_to :volkswagen, index: true
+      t.belongs_to :e_up_version, index: true
+      t.belongs_to :up_version, index: true
+
+      t.belongs_to :polo_version, index: true
+      t.belongs_to :polo_societe_version, index: true
+
+      t.belongs_to :coccinelle_version, index: true
+      t.belongs_to :coccinelle_cabriolet_version, index: true
+
+      t.belongs_to :e_golf_version, index: true
+
+      t.belongs_to :golf_version, index: true
+      t.belongs_to :golf_societe_version, index: true
+      t.belongs_to :golf_sportsvan_version, index: true
+      t.belongs_to :golf_sw_version, index: true
+
+      t.belongs_to :jetta_version, index: true
+      t.belongs_to :scirocco_version, index: true
+      t.belongs_to :touran_version, index: true
+
+      t.belongs_to :passat_version, index: true
+      t.belongs_to :passat_sw_version, index: true
+
+      t.belongs_to :arteon_version, index: true
+      t.belongs_to :sharan_version, index: true
+      t.belongs_to :t_cross_version, index: true
+
+      t.belongs_to :tiguan_version, index: true
+      t.belongs_to :tiguan_all_space_version, index: true
+
+      t.belongs_to :t_roc_version, index: true
+      t.belongs_to :touareg_version, index: true
+
+      t.belongs_to :caddy_version, index: true
+      t.belongs_to :caddy_maxi_version, index: true
+      t.belongs_to :caddy_maxi_van_version, index: true
+      t.belongs_to :caddy_van_version, index: true
+
+      t.belongs_to :california_version, index: true
+      t.belongs_to :caravelle_version, index: true
+      t.belongs_to :multivan_version, index: true
+      t.belongs_to :amarok_version, index: true
+
+      t.belongs_to :crafter_cabine_version, index: true
+      t.belongs_to :crafter_double_cabine_version, index: true
+      t.belongs_to :crafter_combi_version, index: true
+      t.belongs_to :crafter_procab_version, index: true
+
+      t.belongs_to :e_crafter_version, index: true
+
+      t.belongs_to :transporter_version, index: true
+      t.belongs_to :transporter_cabine_version, index: true
+      t.belongs_to :transporter_double_cabine_version, index: true
+      t.belongs_to :transporter_fourgon_version, index: true
+      t.belongs_to :transporter_procab_version, index: true
+      t.belongs_to :transporter_tete_motrice_version, index: true
+
+
       t.timestamps
     end
     add_index :marques, :volkswagen

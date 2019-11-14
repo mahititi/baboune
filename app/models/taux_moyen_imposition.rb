@@ -1,0 +1,10 @@
+class TauxMoyenImposition < ApplicationRecord
+    belongs_to:custom
+
+    has_many :customs
+    has_many :taux_impositions
+    has_many :regime_declaratifs
+    has_many :statut_juridiques
+    has_many :tva_taxes
+    has_many :dernier_exercices
+end

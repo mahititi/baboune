@@ -5,6 +5,10 @@ class CreateRs6AvantVersions < ActiveRecord::Migration[6.0]
       t.boolean :4_0_V8_TFSI_605_Quattro_Tiptronic_8_Performance_Break
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :rs6_avant, index: true
+
+
       t.timestamps
     end
     add_index :marques, :audi

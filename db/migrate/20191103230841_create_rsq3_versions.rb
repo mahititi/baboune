@@ -5,6 +5,9 @@ class CreateRsq3Versions < ActiveRecord::Migration[6.0]
       t.boolean :2_5_5cyl_TFSI_367_Quattro_S_tronic_7_Performance_Tout_Terrain
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.boolean :rsq3, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

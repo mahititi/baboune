@@ -40,7 +40,9 @@ class CreateA6AvantVersions < ActiveRecord::Migration[6.0]
       t.boolean :55_TFSI_340_Quattro_S_tronic_7_Avus_Extende_Break
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :
+
+      t.belongs_to :A6_avant, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

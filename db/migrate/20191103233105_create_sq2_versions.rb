@@ -4,6 +4,7 @@ class CreateSq2Versions < ActiveRecord::Migration[6.0]
       t.boolean :50_TFSI_300_Quattro_S_tronic_7_Tout_Terrain
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+      t.belongs_to :sq2, index: true
       t.timestamps
     end
     add_index :marques, :audi

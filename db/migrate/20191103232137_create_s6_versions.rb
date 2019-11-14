@@ -4,6 +4,10 @@ class CreateS6Versions < ActiveRecord::Migration[6.0]
       t.boolean :56_TDI_349_Quattro_Tiptronic_8_4p
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :s6, index: true
+
+
       t.timestamps
     end
     add_index :marques, :audi

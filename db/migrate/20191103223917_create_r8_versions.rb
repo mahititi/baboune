@@ -5,6 +5,9 @@ class CreateR8Versions < ActiveRecord::Migration[6.0]
       t.boolean :5_2_V10_FSI_620_S_tronic_7_Performance_Quattro_Coupe
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :r8, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

@@ -9,6 +9,9 @@ class CreateA8LVersions < ActiveRecord::Migration[6.0]
       t.boolean :55_TFSi_340_Quattro_Tiptronic_8_Avus_Extended_Limousine
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :a8_l, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

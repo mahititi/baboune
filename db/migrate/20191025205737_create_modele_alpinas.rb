@@ -6,9 +6,9 @@ class CreateModeleAlpinas < ActiveRecord::Migration[6.0]
       t.boolean :XD3
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :b4_versions, index: true
-      t.belongs_to :b5_versions, index: true
-      t.belongs_to :xd3_versions, index: true
+      t.belongs_to :b4_version, index: true
+      t.belongs_to :b5_version, index: true
+      t.belongs_to :xd3_version, index: true
       t.timestamps
     end
     add_index :marques, :alpinas

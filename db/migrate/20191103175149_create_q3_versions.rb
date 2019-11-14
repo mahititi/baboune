@@ -35,6 +35,9 @@ class CreateQ3Versions < ActiveRecord::Migration[6.0]
       t.boolean :45_TFSI_230_Quattro_S_tronic_7_Design_Luxe_ToutTerrain
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :q3, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

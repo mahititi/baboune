@@ -30,7 +30,9 @@ class CreateA1sportbackVersions < ActiveRecord::Migration[6.0]
       t.boolean :Sportback_40_TFSI_200_S_tronic_6_S_line_5p
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :
+
+      t.belongs_to :a1sportback, index: true
+
       t.timestamps
     end
     add_index :marques, :audi

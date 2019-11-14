@@ -37,7 +37,9 @@ class CreateA4AvantVersions < ActiveRecord::Migration[6.0]
       t.boolean :45_TDI_231_Quattro_Tiptronic_8_Avus_Break
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :
+
+      t.belongs_to :A4_avant
+
       t.timestamps
     end
     add_index :marques, :audi

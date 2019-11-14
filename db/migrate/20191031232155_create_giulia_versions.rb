@@ -31,9 +31,11 @@ class CreateGiuliaVersions < ActiveRecord::Migration[6.0]
       t.boolean :2_9_V6_510_AT8_NRING_4p
 
 
-      t.belongs_to :
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :guila, index: true
+      
       t.timestamps
     end
     add_index :alfa_romeo, :guila

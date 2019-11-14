@@ -52,7 +52,9 @@ class CreateA3BerlineVersions < ActiveRecord::Migration[6.0]
       t.boolean :40_TDI_184_Quattro_S_tronic_7_S_Line_Plus_4p
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :
+
+      t.belongs_to :a3_berline
+
       t.timestamps
     end
     add_index :marques, :audi

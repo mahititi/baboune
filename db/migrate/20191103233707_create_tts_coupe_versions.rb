@@ -4,6 +4,7 @@ class CreateTtsCoupeVersions < ActiveRecord::Migration[6.0]
       t.boolean :40_TFSI_306_Quattro_S_tronic_7_Coupe
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+      t.belongs_to :tts_coupe, index: true
       t.timestamps
     end
     add_index :marques, :audi

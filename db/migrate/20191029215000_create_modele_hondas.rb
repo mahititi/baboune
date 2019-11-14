@@ -8,7 +8,18 @@ class CreateModeleHondas < ActiveRecord::Migration[6.0]
       t.boolean :cr_v
       t.boolean :hr_v
       t.boolean :e
-      t.bel
+
+      t.belongs_to :honda, index: true
+      t.belongs_to :jazz_version, index: true
+      t.belongs_to :civic_version, index: true
+      t.belongs_to :civic_type_r_version, index: true
+      t.belongs_to :nsx_version, index: true
+      t.belongs_to :cr_v_version, index: true
+      t.belongs_to :hr_v_version, index: true
+      t.belongs_to :e_version, index: true
+
+
+
       t.timestamps
     end
     add_index :marques, :honda

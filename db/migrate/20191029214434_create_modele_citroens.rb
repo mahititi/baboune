@@ -31,8 +31,39 @@ class CreateModeleCitroens < ActiveRecord::Migration[6.0]
       t.boolean :jumper_plateau_cabine
       t.boolean :jumper_plateau_double_cabine
 
-      t.belongs_to :
-      rescue ExceptionName
+      t.belongs_to :citroen_version, index: true
+
+      t.belongs_to :C1_version, index: true
+      t.belongs_to :C_zero_version, index: true
+      t.belongs_to :C3_version, index: true
+      t.belongs_to :C3_air_cross_version, index: true
+      t.belongs_to :C3_societe_version, index: true
+      t.belongs_to :e_mehari_version, index: true
+      t.belongs_to :C4_cactus_version, index: true
+      t.belongs_to :C4_cactus_societe_version, index: true
+      t.belongs_to :C4_space_tourer_version, index: true
+      t.belongs_to :grand_c4_version, index: true
+      t.belongs_to :C5_version, index: true
+      t.belongs_to :berlingo_version, index: true
+      t.belongs_to :berlingo_van_version, index: true
+      t.belongs_to :e_berlingo_version, index: true
+
+      t.belongs_to :jumpy_version, index: true
+      t.belongs_to :jumpy_cabine_approfondie_version, index: true
+      t.belongs_to :jumpy_combi_version, index: true
+      t.belongs_to :jumpy_plancher_cabine_version, index: true
+      t.belongs_to :space_tourer_version, index: true
+
+      t.belongs_to :jumper_version, index: true
+      t.belongs_to :jumper_cabine_approfondie_version, index: true
+      t.belongs_to :jumper_cabine_version, index: true
+      t.belongs_to :jumper_cabine_benne_version, index: true
+      t.belongs_to :jumper_double_cabine_version, index: true
+      t.belongs_to :jumper_combi_version, index: true
+      t.belongs_to :jumper_plancher_cabine_version, index: true
+      t.belongs_to :jumper_plateau_cabine_version, index: true
+      t.belongs_to :jumper_plateau_double_cabine_version, index: true
+
 
       end
       t.timestamps

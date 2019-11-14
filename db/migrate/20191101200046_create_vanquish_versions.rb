@@ -5,7 +5,7 @@ class CreateVanquishVersions < ActiveRecord::Migration[6.0]
       t.boolean :S_6_0i_V12_600_Touchtronic_3_Volante_Cabriolet
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to
+
       t.timestamps
     end
     add_index :marques, :aston_martin

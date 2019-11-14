@@ -4,6 +4,10 @@ class CreateS5Versions < ActiveRecord::Migration[6.0]
       t.boolean :3_0_V6_TFSI_354_Quattro_Tiptronic_8_Coupe
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+
+      t.belongs_to :s5, index: true
+
+
       t.timestamps
     end
     add_index :marques, :audi

@@ -38,7 +38,8 @@ class CreateStelvioVersions < ActiveRecord::Migration[6.0]
       t.boolean :2_9i_V6_510_Q4_AT8_NRING_Tout_Terrain
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      t.belongs_to :
+
+      t.belongs_to :stelvio, index: true
 
       t.timestamps
     end

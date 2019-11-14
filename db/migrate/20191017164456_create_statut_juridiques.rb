@@ -9,12 +9,12 @@ class CreateStatutJuridiques < ActiveRecord::Migration[6.0]
       #créer la liaison
       #solution pour que lechoix fait soitmis dans une table
       #penser a mettre en place selon calcul
-      t.belongs_to :customs, index: true #changer user
-      t.belongs_to :taux_impositions, index: true #changer user
-      t.belongs_to :regime_declaratifs, index: true #changer user
-      t.belongs_to :tva_taxes, index: true #changer user
-      t.belongs_to :taux_moyen_impositions, index: true #changer user
-      t.belongs_to :dernier_exercices, index: true #changer user
+      t.belongs_to :custom, index: true #changer user
+      t.belongs_to :taux_imposition, index: true #changer user
+      t.belongs_to :regime_declaratif, index: true #changer user
+      t.belongs_to :tva_taxe, index: true #changer user
+      t.belongs_to :taux_moyen_imposition, index: true #changer user
+      t.belongs_to :dernier_exercice, index: true #changer user
       t.timestamps
     end
     add_index :customs, :society

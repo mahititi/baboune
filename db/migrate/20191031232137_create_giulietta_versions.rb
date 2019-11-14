@@ -18,9 +18,9 @@ class CreateGiuliettaVersions < ActiveRecord::Migration[6.0]
       t.boolean :1_6_JTDm_170_TCT_Executive_5p
       t.boolean :1_6_JTDm_170_TCT_Sport_Edition_5p
       t.boolean :1_6_JTDm_170_TCT_Veloce_5p
-      t.belongs_to :
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
+      t.belongs_to :giulietta, index: true
       t.timestamps
     end
     add_index :marques, :alfa_romeo

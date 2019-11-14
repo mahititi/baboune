@@ -9,6 +9,6 @@ class CreatePrixCarburants < ActiveRecord::Migration[6.0]
       t.datetime "updated_at", null: false
       t.timestamps
     end
-    add_index :version_cars, :#revoir
+    #add_index :version_cars, :#revoir
   end
 end
