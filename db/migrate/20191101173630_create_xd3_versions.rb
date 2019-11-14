@@ -4,7 +4,8 @@ class CreateXd3Versions < ActiveRecord::Migration[6.0]
       t.boolean :3_0_d_6cyl_Biturbo_350_Switc_Tronic_Tout_Terrain
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
-      
+
+      belongs_to :xd3
       t.timestamps
     end
     add_index :marques, :alpina

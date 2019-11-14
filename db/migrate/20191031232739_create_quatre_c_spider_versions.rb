@@ -6,8 +6,7 @@ class CreateQuatreCSpiderVersions < ActiveRecord::Migration[6.0]
       t.datetime "created_at", null: false
       t.datetime "updated_at", null: false
       t.belongs_to :4C_spider
-      t.belongs_to :1750_Tbi_240_Alfa_TCT_Italia_Cabriolet
-      t.belongs_to :1750_Tbi_240_TCT_Standard_Edition_Cabriolet
+  
 
       t.timestamps
     end
