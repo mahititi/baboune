@@ -33,7 +33,7 @@ class CreateModeleRenaults < ActiveRecord::Migration[6.0]
       t.boolean :master_double_cabine
       t.boolean :master_combi
       t.boolean :master_plancher_cabine
-      t.boolean :master_transport_specifiques
+      t.boolean :master_transport_spec
 
       t.boolean :trafic
       t.boolean :trafic_cabine_approfondie
@@ -73,7 +73,7 @@ class CreateModeleRenaults < ActiveRecord::Migration[6.0]
       t.belongs_to :master_double_cabine_version, index: true
       t.belongs_to :master_combi_version, index: true
       t.belongs_to :master_plancher_cabine_version, index: true
-      t.belongs_to :master_transport_specifiques_version, index: true
+      t.belongs_to :master_transport_spec_version, index: true
 
       t.belongs_to :trafic_version, index: true
       t.belongs_to :trafic_cabine_approfondie_version, index: true

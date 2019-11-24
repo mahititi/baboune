@@ -1,25 +1,25 @@
 class CreateModelePeugeots < ActiveRecord::Migration[6.0]
   def change
     create_table :modele_peugeots do |t|
-      t.boolean :108
+      t.boolean :"108"
       t.boolean :i0n
-      t.boolean :2008
+      t.boolean :"2008"
 
-      t.boolean :208
-      t.boolean :208_societe
+      t.boolean :"208"
+      t.boolean :"208_societe"
 
-      t.boolean :3008
-      t.boolean :3008_societe
+      t.boolean :"3008"
+      t.boolean :"3008_societe"
 
-      t.boolean :308
-      t.boolean :308_societe
-      t.boolean :308_SW
-      t.boolean :308_SW_societe
+      t.boolean :"308"
+      t.boolean :"308_societe"
+      t.boolean :"308_SW"
+      t.boolean :"308_SW_societe"
 
-      t.boolean :508
-      t.boolean :508_SW
+      t.boolean :"508"
+      t.boolean :"508_SW"
 
-      t.boolean :5008
+      t.boolean :"5008"
 
       t.boolean :e_partner
       t.boolean :e_partner_tepee
@@ -47,25 +47,25 @@ class CreateModelePeugeots < ActiveRecord::Migration[6.0]
       t.boolean :traveller
 
       t.belongs_to :peugeot, index: true
-      t.belongs_to :108_version, index: true
+      t.belongs_to :"108_version", index: true
       t.belongs_to :i0n_version, index: true
-      t.belongs_to :2008_version, index: true
+      t.belongs_to :"2008_version", index: true
 
-      t.belongs_to :208_version, index: true
-      t.belongs_to :208_societe_version, index: true
+      t.belongs_to :"208_version", index: true
+      t.belongs_to :"208_societe_version", index: true
 
-      t.belongs_to :3008_version, index: true
-      t.belongs_to :3008_societe_version, index: true
+      t.belongs_to :"3008_version", index: true
+      t.belongs_to :"3008_societe_version", index: true
 
-      t.belongs_to :308_version, index: true
-      t.belongs_to :308_societe_version, index: true
-      t.belongs_to :308_SW_version, index: true
-      t.belongs_to :308_SW_societe_version, index: true
+      t.belongs_to :"308_version", index: true
+      t.belongs_to :"308_societe_version", index: true
+      t.belongs_to :"308_SW_version", index: true
+      t.belongs_to :"308_SW_societe_version", index: true
 
-      t.belongs_to :508_version, index: true
-      t.belongs_to :508_SW_version, index: true
+      t.belongs_to :"508_version", index: true
+      t.belongs_to :"508_SW_version", index: true
 
-      t.belongs_to :5008_version, index: true
+      t.belongs_to :"5008_version", index: true
 
       t.belongs_to :e_partner_version, index: true
       t.belongs_to :e_partner_tepee_version, index: true

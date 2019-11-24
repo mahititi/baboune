@@ -114,7 +114,7 @@ class CreateModeleMercedes < ActiveRecord::Migration[6.0]
 
       t.belongs_to :sprinter_version_version, index: true
       t.belongs_to :sprinter_chassis_cabine_version, index: true
-      t.belongs_to :sprinter_chassis_double_cabine_version, index: true
+      t.belongs_to :sprinter_chassis_doub_cab_version, index: true
       t.belongs_to :sprinter_combo_version, index: true
 
       t.belongs_to :vito_version, index: true

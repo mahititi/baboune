@@ -56,7 +56,7 @@ class CreateModeleVolkswagens < ActiveRecord::Migration[6.0]
 
       t.boolean :transporter
       t.boolean :transporter_cabine
-      t.boolean :transporter_double_cabine
+      t.boolean :transporter_doub_cab
       t.boolean :transporter_fourgon
       t.boolean :transporter_procab
       t.boolean :transporter_tete_motrice
@@ -115,7 +115,7 @@ class CreateModeleVolkswagens < ActiveRecord::Migration[6.0]
 
       t.belongs_to :transporter_version, index: true
       t.belongs_to :transporter_cabine_version, index: true
-      t.belongs_to :transporter_double_cabine_version, index: true
+      t.belongs_to :transporter_doub_cab_version, index: true
       t.belongs_to :transporter_fourgon_version, index: true
       t.belongs_to :transporter_procab_version, index: true
       t.belongs_to :transporter_tete_motrice_version, index: true

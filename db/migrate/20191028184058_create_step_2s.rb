@@ -7,9 +7,7 @@ class CreateStep2s < ActiveRecord::Migration[6.0]
       t.references :utilisateur_vehicules, index: true, foreign_key: true
       t.references :information_socials, index: true, foreign_key: true
       t.references :fonction_utilisateurs, index: true, foreign_key: true
-      t.datetime "created_at", null: false
-      t.datetime "updated_at", null: false
-      t.timestamps null: false
+      t.timestamps 
 
     end
   end

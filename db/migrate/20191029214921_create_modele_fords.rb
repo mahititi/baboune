@@ -98,12 +98,12 @@ class CreateModeleFords < ActiveRecord::Migration[6.0]
       t.belongs_to :transit_double_cabine_version, index: true
       t.belongs_to :transit_modulaire_version, index: true
       t.belongs_to :transit_connect_version, index: true
-      t.belongs_to :transit_connect_cabine_approfondie_version, index: true
-      t.belongs_to :transit_custom_cabine_approfondie_version, index: true
+      t.belongs_to :transit_connect_cab_approf_version, index: true
+      t.belongs_to :transit_custom_cab_approf_version, index: true
       t.belongs_to :transit_custom_fourgon_version, index: true
       t.belongs_to :transit_custom_kombi_version, index: true
       t.belongs_to :transit_fourgon_version, index: true
-      t.belongs_to :transit_fourgon_cabine_approfondie_version, index: true
+      t.belongs_to :transit_fourgon_cab_approf_version, index: true
       t.belongs_to :transit_kombi_version, index: true
       t.belongs_to :transit_couriert_version, index: true
 

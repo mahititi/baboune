@@ -8,10 +8,7 @@ class CreateInformationSocials < ActiveRecord::Migration[6.0]
       t.belongs_to :date_acquisition, index: true
       t.belongs_to :information_social, index: true
       t.belongs_to :taxe_vehicule, index: true
-      t.datetime "created_at", null: false
-      t.datetime "updated_at", null: false
       t.timestamps
     end
-    add_index :custom, :society
   end
 end

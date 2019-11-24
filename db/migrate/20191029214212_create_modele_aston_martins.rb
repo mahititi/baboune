@@ -9,8 +9,8 @@ class CreateModeleAstonMartins < ActiveRecord::Migration[6.0]
       t.belongs_to :rapide_version, index: true
       t.belongs_to :vanquish_version, index: true
       t.belongs_to :vantage_version, index: true
+      
       t.timestamps
     end
-    add_index :marques, :aston_martins
   end
 end

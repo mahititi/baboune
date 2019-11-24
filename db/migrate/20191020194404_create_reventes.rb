@@ -2,16 +2,12 @@ class CreateReventes < ActiveRecord::Migration[6.0]
   def change
     create_table :reventes do |t|
       t.float :price
-      t.references :taux_financements, index: true, foreign_key: true
-      t.references :temps_financements, index: true, foreign_key: true
-      t.references :financements, index: true, foreign_key: true
-      t.references :temps_financements, index: true, foreign_key: true
-      t.references :reglement_vehicules, index: true, foreign_key: true
-      t.references :amortissements, index: true, foreign_key: true
-      t.datetime "created_at", null: false
-      t.datetime "updated_at", null: false
+      t.belongs_to :temps_financements, index: true, foreign_key: true
+      t.belongs_to :reglement_vehicule, index: true
+      t.belongs_to :taux_financements, index: true
+      t.belongs_to :amortissement, index: true
+      t.belongs_to :financements, index: true
       t.timestamps
     end
-    add_index :prix_catalogues, :price
   end
 end

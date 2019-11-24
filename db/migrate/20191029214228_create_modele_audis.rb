@@ -115,7 +115,6 @@ class CreateModeleAudis < ActiveRecord::Migration[6.0]
       t.belongs_to :s3_cabriolet_version, index: true
       t.belongs_to :s3_sportback_version, index: true
       t.belongs_to :s4_avant_version, index: true
-      t.belongs_to :s4_avant_version, index: true
       t.belongs_to :s5_version, index: true
       t.belongs_to :s5_cabriolet_version, index: true
       t.belongs_to :s5_sportback_version, index: true
@@ -131,8 +130,9 @@ class CreateModeleAudis < ActiveRecord::Migration[6.0]
       t.belongs_to :tt_rs_roadster_version, index: true
       t.belongs_to :tts_coupe_version, index: true
       t.belongs_to :tts_roadster_version, index: true
+      t.belongs_to :modele_audis
       t.timestamps
     end
-    add_index :marques, :audi
+
   end
 end

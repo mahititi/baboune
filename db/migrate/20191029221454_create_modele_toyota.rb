@@ -13,7 +13,7 @@ class CreateModeleToyota < ActiveRecord::Migration[6.0]
       t.boolean :corolla
       t.boolean :corolla_societe
       t.boolean :corolla_touring_sports
-      t.boolean :corolla_touring_sports_societe
+      t.boolean :corolla_touring_sports_soc
 
       t.boolean :avensis
 
@@ -59,7 +59,7 @@ class CreateModeleToyota < ActiveRecord::Migration[6.0]
       t.belongs_to :corolla_version, index: true
       t.belongs_to :corolla_societe_version, index: true
       t.belongs_to :corolla_touring_sports_version, index: true
-      t.belongs_to :corolla_touring_sports_societe_version, index: true
+      t.belongs_to :corolla_touring_sports_soc_version, index: true
 
       t.belongs_to :avensis_version, index: true
 

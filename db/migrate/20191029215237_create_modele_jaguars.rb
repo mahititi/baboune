@@ -17,8 +17,8 @@ class CreateModeleJaguars < ActiveRecord::Migration[6.0]
       t.belongs_to :f_type_cabriolet_version, index: true
       t.belongs_to :f_type_coupe_version, index: true
       t.belongs_to :e_pace_version, index: true
-      t.belongs_to :f_pace_version, index: truef
-
+      t.belongs_to :f_pace_version, index: true
+      t.belongs_to :jaguars, index: true
 
       t.timestamps
     end

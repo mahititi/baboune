@@ -1,14 +1,14 @@
 class CreateModeleFiats < ActiveRecord::Migration[6.0]
   def change
     create_table :modele_fiats do |t|
-      t.boolean :500
-      t.boolean :500C
-      t.boolean :500L
-      t.boolean :500Lwagon
-      t.boolean :500X
+      t.boolean :"500"
+      t.boolean :"500C"
+      t.boolean :"500L"
+      t.boolean :"500Lwagon"
+      t.boolean :"500X"
 
       t.boolean :panda
-      t.boolean :124
+      t.boolean :"124"
 
       t.boolean :tipo
       t.boolean :tipo_5p
@@ -42,14 +42,14 @@ class CreateModeleFiats < ActiveRecord::Migration[6.0]
       t.boolean :talento_plancher_cabine_approfondie
 
       t.belongs_to :fiat, index: true
-      t.belongs_to :500_version, index: true
-      t.belongs_to :500C_version, index: true
-      t.belongs_to :500L_version, index: true
-      t.belongs_to :500Lwagon_version, index: true
-      t.belongs_to :500X_version, index: true
+      t.belongs_to :"500_version", index: true
+      t.belongs_to :"500C_version", index: true
+      t.belongs_to :"500L_version", index: true
+      t.belongs_to :"500Lwagon_version", index: true
+      t.belongs_to :"500X_version", index: true
 
       t.belongs_to :panda_version, index: true
-      t.belongs_to :124_version, index: true
+      t.belongs_to :"124_version", index: true
 
       t.belongs_to :tipo_version, index: true
       t.belongs_to :tipo_5p_version, index: true

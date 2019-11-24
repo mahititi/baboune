@@ -28,14 +28,11 @@ class CreateA1sportbackVersions < ActiveRecord::Migration[6.0]
       t.boolean :Sportback_35_TFSI_150_S_tronic_7_S_line_5p
       t.boolean :Sportback_35_TFSI_150_S_tronic_7_Design_Luxe_5p
       t.boolean :Sportback_40_TFSI_200_S_tronic_6_S_line_5p
-      t.datetime "created_at", null: false
-      t.datetime "updated_at", null: false
 
       t.belongs_to :a1sportback, index: true
-
+      t.belongs_to :modele_audis
+      t.belongs_to :audi
       t.timestamps
     end
-    add_index :marques, :audi
-    add_index :modele_audis, :a1sportback
   end
 end

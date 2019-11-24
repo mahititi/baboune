@@ -11,6 +11,5 @@ class CreateTaxeVehicules < ActiveRecord::Migration[6.0]
       t.belongs_to :fonction_utilisateur, index: true
       t.timestamps
     end
-    add_index :customs, :society
   end
 end

@@ -60,8 +60,6 @@ class CreateMarques < ActiveRecord::Migration[6.0]
       t.boolean :toyota#toyotum
       t.boolean :volkswagen
       t.boolean :volvo
-      t.datetime "created_at", null: false
-      t.datetime "updated_at", null: false
       t.belongs_to :modele_abarth, index: true
       t.belongs_to :modele_alfa_romeo, index: true
       t.belongs_to :modele_alpine, index: true
@@ -124,6 +122,5 @@ class CreateMarques < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
-      add_index :version_cars, :name
   end
 end

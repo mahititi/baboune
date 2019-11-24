@@ -11,11 +11,8 @@ class CreateCombustibles < ActiveRecord::Migration[6.0]
       t.belongs_to :emmission_tauxe, index: true#
       t.belongs_to :consomation, index: true
       t.belongs_to :prix_carburant, index: true
-      t.datetime "created_at", null: false
-      t.datetime "updated_at", null: false
+
       t.timestamps
     end
-    #add_index :version_cars, :
-
   end
 end

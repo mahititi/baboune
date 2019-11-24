@@ -1,8 +1,8 @@
 class CreateModeleNissans < ActiveRecord::Migration[6.0]
   def change
     create_table :modele_nissans do |t|
-      t.boolean :370Z_coupe
-      t.boolean :370Z_roadster
+      t.boolean :"370Z_coupe"
+      t.boolean :"370Z_roadster"
 
       t.boolean :e_nv200_evalia
       t.boolean :e_nv200_fourgon
@@ -49,8 +49,8 @@ class CreateModeleNissans < ActiveRecord::Migration[6.0]
 
       t.belongs_to :nissan, index: true
 
-      t.belongs_to :370Z_coupe_version, index: true
-      t.belongs_to :370Z_roadster_version, index: true
+      t.belongs_to :"370Z_coupe_version", index: true
+      t.belongs_to :"370Z_roadster_version", index: true
 
       t.belongs_to :e_nv200_evalia_version, index: true
       t.belongs_to :e_nv200_fourgon_version, index: true

@@ -62,12 +62,10 @@ class CreateModeleCitroens < ActiveRecord::Migration[6.0]
       t.belongs_to :jumper_combi_version, index: true
       t.belongs_to :jumper_plancher_cabine_version, index: true
       t.belongs_to :jumper_plateau_cabine_version, index: true
-      t.belongs_to :jumper_plateau_double_cabine_version, index: true
+      t.belongs_to :jumper_plateau_2_cab_version, index: true
 
-
-      end
       t.timestamps
+      end
+      add_index :marques, :citroen
     end
-    add_index :marques, :citroen
   end
-end
